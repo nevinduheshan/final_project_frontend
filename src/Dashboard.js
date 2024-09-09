@@ -25,7 +25,7 @@ function Dashboard() {
     return (
         <Layout>
         <div>
-            <h1>Welcome to the Dashboard!</h1>
+            <h1>Welcome to the Dashboarddddd!</h1>
             {/* Your dashboard content */}
             <button onClick={handleLogout}>Logout</button>
         </div>
