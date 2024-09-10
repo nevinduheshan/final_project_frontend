@@ -5,6 +5,8 @@ import Login from './Components/Pages/Login/Login';
 import Prediction from './Components/Pages/Prediction/PredictionForm'; // Import the Prediction component
 import Dashboard from './Components/Pages/Dashboard/Dashboard';
 import Home from './Components/Pages/Home/Home';
+import About from './Components/Pages/About/About';
+import Contact from './Components/Pages/Contact/Contact';
 
 function App() {
 
@@ -21,6 +23,8 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/register" element={<Register />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="/prediction" element={<Prediction />} /> {/* Add the route for Prediction */}
           <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
