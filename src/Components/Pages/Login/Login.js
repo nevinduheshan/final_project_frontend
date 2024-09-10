@@ -32,7 +32,7 @@ function Login() {
 
     return (
         <Layout>
-        <div>
+        <div className="pt-16">
             <h1>Login</h1>
             <form onSubmit={handleLogin}>
                 <input

@@ -36,7 +36,7 @@ const Register = () => {
 
   return (
     <Layout>
-    <div>
+    <div className="pt-16">
       <h2>Registerfdsfsdf</h2>
       <form onSubmit={handleSubmit}>
         <div>

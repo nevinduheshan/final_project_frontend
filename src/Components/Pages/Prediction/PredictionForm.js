@@ -37,7 +37,7 @@ function App() {
 
   return (
     <Layout>
-    <div>
+    <div className="pt-16">
       <h1>Tea Sales Prediction</h1>
       <form onSubmit={handleSubmit}>
         <label>Date (dd/mm/yyyy):</label>
