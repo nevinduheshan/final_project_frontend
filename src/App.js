@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Register from './Register';
 import Login from './Login';
-import Prediction from './PredictionForm'; // Import the Prediction component
+import Prediction from './Components/Pages/Prediction/PredictionForm'; // Import the Prediction component
 import Dashboard from './Dashboard';
 
 function App() {
