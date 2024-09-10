@@ -17,9 +17,16 @@ const AdminDashboard = () => {
     }, []);
 
     const handleDelete = async (userId) => {
-        await axios.delete(`http://localhost:8000/admin/users/delete/${userId}`);
-        setUsers(users.filter(user => user.id !== userId));
+        try {
+            await axios.delete(`http://localhost:8000/admin/users/${userId}`);
+            alert('User deleted successfully');
+            // Optionally, remove the user from the state to update the UI
+            setUsers(users.filter(user => user.id !== userId));
+        } catch (error) {
+            console.error('Error deleting user:', error);
+        }
     };
+    
 
     return (
         <div>
