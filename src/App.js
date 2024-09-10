@@ -7,6 +7,8 @@ import Dashboard from './Components/Pages/Dashboard/Dashboard';
 import Home from './Components/Pages/Home/Home';
 import About from './Components/Pages/About/About';
 import Contact from './Components/Pages/Contact/Contact';
+import AdminLogin from './Components/Admin/AdminLogin';
+import AdminDashboard from './Components/Admin/AdminDashboard';
 
 function App() {
 
@@ -27,6 +29,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/prediction" element={<Prediction />} /> {/* Add the route for Prediction */}
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/adminLogin" element={<AdminLogin />} />
+          <Route path="/admin/dashboard" element={<AdminDashboard />} />
         </Routes>
       </div>
     </Router>
