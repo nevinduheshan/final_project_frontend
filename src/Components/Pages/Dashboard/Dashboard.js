@@ -24,7 +24,7 @@ function Dashboard() {
 
     return (
         <Layout>
-        <div>
+        <div className="pt-16">
             <h1>Welcome to the Dashboarddddd!</h1>
             {/* Your dashboard content */}
             <button onClick={handleLogout}>Logout</button>
