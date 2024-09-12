@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 const AdminDashboard = () => {
     const [users, setUsers] = useState([]);
+    const [messages, setMessages] = useState([]);
 
     useEffect(() => {
         const fetchUsers = async () => {
@@ -15,6 +16,18 @@ const AdminDashboard = () => {
             }
         };
         fetchUsers();
+    }, []);
+
+    useEffect(() => {
+        const fetchMessages = async () => {
+            try {
+                const response = await axios.get('http://localhost:8000/admin/messages');
+                setMessages(response.data);
+            } catch (error) {
+                console.error('Error fetching Messages:', error);
+            }
+        };
+        fetchMessages();
     }, []);
 
     const handleDelete = async (userId) => {
@@ -143,6 +156,63 @@ const AdminDashboard = () => {
                                             <td class="px-6 py-2">
                                                 <button class="focus:outline-none text-white bg-red-700 hover:bg-red-800 focus:ring-4 focus:ring-red-300 font-medium rounded-lg text-sm px-5 py-2 me-2 mb-2 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900" onClick={() => handleDelete(user.id)}>Delete</button>
                                             </td>
+                                        </tr>
+                                    ))}
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                {/* Meesages */}
+                <div className="flex flex-wrap my-5 -mx-2">
+                    <div className="w-full p-2">
+
+                        <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+                            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                                    <tr>
+                                        <th scope="col" class="px-6 py-3">
+                                            First Name
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            Last Name
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            Email
+                                        </th>
+
+                                        <th scope="col" class="px-6 py-3">
+                                            Phone Number
+                                        </th>
+                                        <th scope="col" class="px-6 py-3">
+                                            Message
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {messages.map(message => (
+                                        <tr key={message.id} class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
+                                            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                                                {message.first_name}
+                                            </th>
+                                            <td class="px-6 py-4">
+                                                {message.last_name}
+                                            </td>
+                                            <td class="px-6 py-4">
+                                                {message.email}
+                                            </td>
+                                            <td class="px-6 py-4">
+                                                {message.phone_number}
+                                            </td>
+                                            <td class="px-6 py-4">
+                                                {message.message}
+                                            </td>
+
+
                                         </tr>
                                     ))}
                                 </tbody>
