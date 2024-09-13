@@ -1,6 +1,7 @@
 import React from 'react'
 import Layout from '../../../Layout'
-import { Link } from 'react-router-dom'
+import company from '../../assets/company.jpg'
+import tea_types from '../../assets/tea_types.jpg'
 
 const About = () => {
   return (
@@ -11,13 +12,12 @@ const About = () => {
         <section className="bg-white dark:bg-gray-900">
           <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
             <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">We didn't reinvent the wheel</h2>
-              <p className="mb-4">We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need.</p>
-              <p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick.</p>
+              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Welcome to our Tea Sales Price Prediction System!</h2>
+              <p className="mb-4 text-gray-900 ">We are passionate about harnessing the power of technology and data analytics to provide the tea industry with innovative tools for accurate forecasting. Our platform is designed to empower tea producers, distributors, and retailers with actionable insights that drive better decision-making, improve profitability, and keep up with market trends.</p>
             </div>
             <div className="grid grid-cols-2 gap-4 mt-8">
-              <img className="w-full rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-2.png" alt="office content 1" />
-              <img className="mt-4 w-full lg:mt-10 rounded-lg" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/content/office-long-1.png" alt="office content 2" />
+              <img className="w-full rounded-lg" src={company} alt="Company" />
+              <img className="mt-4 w-full lg:mt-10 rounded-lg" src={tea_types} alt="tea_types" />
             </div>
           </div>
         </section>
@@ -26,16 +26,13 @@ const About = () => {
         <section className="bg-white dark:bg-gray-900">
           <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
             <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Powering innovation at 200,000+ companies worldwide</h2>
-              <p className="mb-4">Empower Developers, IT Ops, and business teams to collaborate at high velocity. Respond to changes and deliver great customer and employee service experiences fast.</p>
-              <Link href="#" className="inline-flex items-center font-medium text-primary-600 hover:text-primary-800 dark:text-primary-500 dark:hover:text-primary-700">
-                Learn more
-                <svg className="ml-1 w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clipRule="evenodd"></path></svg>
-              </Link>
+              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Our Vision and Mission</h2>
+              <p className="mb-4 text-gray-900 ">We envision a future where tea businesses can effortlessly anticipate price fluctuations, make data-driven decisions, and maximize their profits. By providing a reliable and easy-to-use prediction system, we are committed to helping our users achieve success and foster innovation within the industry.</p>
+              
             </div>
             <div className="mt-4 font-light text-gray-500 sm:text-lg lg:mt-0 dark:text-gray-400">
-              <p className="mb-4">Track work across the enterprise through an open, collaborative platform. Link issues across Jira and ingest data from other software development tools, so your IT support and operations teams have richer contextual information to rapidly respond to requests, incidents, and changes.</p>
-              <p>Deliver great service experiences fast - without the complexity of traditional ITSM solutions.Accelerate critical development work, eliminate toil, and deploy changes with ease, with a complete audit trail for every change.</p>
+              <p className="mb-4 text-gray-900">Our mission is to revolutionize the tea industry by offering state-of-the-art machine learning solutions that predict future sales prices with unmatched precision. We aim to help businesses thrive by giving them the tools they need to stay ahead in a dynamic and competitive market.</p>
+              <p className='text-gray-900'>We are a dedicated team of tech enthusiasts, data scientists, and tea industry experts who share a common goal: making advanced technology accessible and practical for tea businesses of all sizes. Our experience in machine learning, data analytics, and business intelligence has enabled us to develop a tool that provides accurate and valuable predictions for the tea market.</p>
             </div>
           </div>
         </section>
@@ -43,19 +40,19 @@ const About = () => {
         {/* Last Section */}
         <section className="bg-white dark:bg-gray-900">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-6">
-            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 lg:text-5xl dark:text-white">Home to the software teams</h2>
-            <p className="font-light text-gray-500 sm:text-lg sm:px-8 lg:px-32 xl:px-64 dark:text-gray-400">Meet your developers where they already are. GitHub is home to over 40 million developers and the world’s largest open source community.</p>
+            <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 lg:text-5xl dark:text-white">Join Us on Our Journey</h2>
+            <p className="font-light text-gray-500 sm:text-lg sm:px-8 lg:px-32 xl:px-64 dark:text-gray-400">We believe that innovation and data-driven decisions can unlock the full potential of the tea industry. By partnering with us, you're not just getting a prediction system – you're gaining a valuable ally in your business journey.</p>
             <dl className="grid grid-cols-2 gap-8 mx-auto mt-8 max-w-screen-md text-gray-900 lg:mt-14 sm:grid-cols-3 dark:text-white">
               <div className="flex flex-col justify-center items-center">
-                <dt className="mb-2 text-4xl font-extrabold">73M+</dt>
-                <dd className="text-xl font-normal text-gray-500 dark:text-gray-400">developers</dd>
+                <dt className="mb-2 text-4xl font-extrabold">73+</dt>
+                <dd className="text-xl font-normal text-gray-500 dark:text-gray-400">coustomers</dd>
               </div>
               <div className="flex flex-col justify-center items-center">
-                <dt className="mb-2 text-4xl font-extrabold">1B+</dt>
+                <dt className="mb-2 text-4xl font-extrabold">80+</dt>
                 <dd className="text-xl font-normal text-gray-500 dark:text-gray-400">contributors</dd>
               </div>
               <div className="flex flex-col justify-center items-center">
-                <dt className="mb-2 text-4xl font-extrabold">4M+</dt>
+                <dt className="mb-2 text-4xl font-extrabold">40+</dt>
                 <dd className="text-xl font-normal text-gray-500 dark:text-gray-400">organizations</dd>
               </div>
             </dl>
