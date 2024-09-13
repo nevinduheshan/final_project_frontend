@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import logo from '../assets/Logo.png'
 
 
 function Header() {
     const token = localStorage.getItem('token');
     const navigate = useNavigate();
-    const location = useLocation();//gey the current location path 
+    const location = useLocation();//get the current location path 
 
     const handleLogout = () => {
         // Clear the authentication token
@@ -15,12 +16,13 @@ function Header() {
     };
 
     const isActive = (path) => location.pathname === path;
+
     return (
         <nav className="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600">
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <Link to="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <img src="https://flowbite.com/docs/images/logo.svg" className="h-8" alt="Flowbite Logo" />
-                    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Flowbite</span>
+                    <img src={ logo } className="h-8" alt="Site Logo" />
+                    <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Tea sales</span>
                 </Link>
                 <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                     {token ? (
