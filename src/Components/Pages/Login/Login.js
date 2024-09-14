@@ -45,21 +45,21 @@ function Login() {
                                 <svg className="w-5 h-5 mr-2 text-primary-600 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                                 <div>
                                     <h3 className="mb-2 text-xl font-bold leading-none text-gray-900 dark:text-white">Get started quickly</h3>
-                                    <p className="mb-2 font-light text-gray-500 dark:text-gray-400">Integrate with developer-friendly APIs or choose low-code.</p>
+                                    <p className="mb-2 font-light text-gray-500 dark:text-gray-400">Accurate Predictions Powered by Machine Learning.</p>
                                 </div>
                             </div>
                             <div className="flex pt-8">
                                 <svg className="w-5 h-5 mr-2 text-primary-600 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                                 <div>
                                     <h3 className="mb-2 text-xl font-bold leading-none text-gray-900 dark:text-white">Support any business model</h3>
-                                    <p className="mb-2 font-light text-gray-500 dark:text-gray-400">Host code that you don't want to share with the world in private.</p>
+                                    <p className="mb-2 font-light text-gray-500 dark:text-gray-400">Our dedicated team of experts is always on hand to assist you.</p>
                                 </div>
                             </div>
                             <div className="flex pt-8">
                                 <svg className="w-5 h-5 mr-2 text-primary-600 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
                                 <div>
-                                    <h3 className="mb-2 text-xl font-bold leading-none text-gray-900 dark:text-white">Join millions of businesses</h3>
-                                    <p className="mb-2 font-light text-gray-500 dark:text-gray-400">Flowbite is trusted by ambitious startups and enterprises of every size.</p>
+                                    <h3 className="mb-2 text-xl font-bold leading-none text-gray-900 dark:text-white">Real-Time Data</h3>
+                                    <p className="mb-2 font-light text-gray-500 dark:text-gray-400">With our system, you can access real-time market insights, allowing you to make timely .</p>
                                 </div>
                             </div>
                         </div>
