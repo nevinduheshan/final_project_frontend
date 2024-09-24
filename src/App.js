@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Register from './Components/Pages/Register/Register';
 import Login from './Components/Pages/Login/Login';
-import Prediction from './Components/Pages/Prediction/PredictionForm'; // Import the Prediction component
+import Prediction from './Components/Pages/Prediction/PredictionForm';
 import Dashboard from './Components/Pages/Dashboard/Dashboard';
 import Home from './Components/Pages/Home/Home';
 import About from './Components/Pages/About/About';
@@ -29,7 +29,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/prediction" element={<Prediction />} /> {/* Add the route for Prediction */}
+          <Route path="/prediction" element={<Prediction />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/adminLogin" element={<AdminLogin />} />
           <Route path="/admin/dashboard" element={<AdminDashboard />} />
