@@ -107,12 +107,12 @@ function App() {
                     <div className="-my-3 divide-y divide-gray-200 dark:divide-gray-800">
                       <dl className="flex items-center justify-between gap-4 py-3">
                         <dt className="text-base font-normal text-gray-500 dark:text-gray-400">Price per unit:</dt>
-                        <dd className="text-base font-medium text-gray-900 dark:text-white">{result.price}</dd>
+                        <dd className="text-base font-medium text-gray-900 dark:text-white">Rs.{result.price}</dd>
                       </dl>
 
                       <dl className="flex items-center justify-between gap-4 py-3">
-                        <dt className="text-base font-bold text-gray-900 dark:text-white">Total  Amount:</dt>
-                        <dd className="text-base font-bold text-gray-900 dark:text-white">{result.amount}</dd>
+                        <dt className="text-base font-bold text-gray-900 dark:text-white">Total  Income:</dt>
+                        <dd className="text-base font-bold text-gray-900 dark:text-white">Rs. {result.amount}</dd>
                       </dl>
                     </div>
                   )}

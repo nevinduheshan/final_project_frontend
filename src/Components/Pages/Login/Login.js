@@ -18,7 +18,7 @@ function Login() {
                 localStorage.setItem('token', response.data.token); // Example if using a token
 
                 // Redirect to the dashboard after successful login
-                navigate('/dashboard');
+                navigate('/prediction');
             }
         } catch (error) {
             if (error.response && error.response.status === 401) {
