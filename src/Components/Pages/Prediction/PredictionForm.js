@@ -57,6 +57,7 @@ function App() {
                     <div>
                       <label htmlFor="selling_mark" className="mb-2 block text-sm font-medium text-gray-900 dark:text-white"> Selling Mark* </label>
                       <input type="text" name="selling_mark" value={formData.selling_mark} onChange={handleChange} required id="selling_mark" className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" placeholder="Selling Mark" />
+                      <p className="ml-4 block text-xs font-medium text-gray-600 dark:text-white">NEW BATUWANGALA or BATUWANGALA</p>
                     </div>
 
                     <div>
@@ -64,7 +65,7 @@ function App() {
                         <label htmlFor="date" className="block text-sm font-medium text-gray-900 dark:text-white"> Date </label>
                       </div>
                       <input
-                        type="text" name="date" value={formData.date} onChange={handleChange} required id="date" className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" placeholder="dd/mm/yyyy"/>
+                        type="text" name="date" value={formData.date} onChange={handleChange} required id="date" className="block w-full rounded-lg border border-gray-300 bg-gray-50 p-2.5 text-sm text-gray-900 focus:border-primary-500 focus:ring-primary-500 dark:border-gray-600 dark:bg-gray-700 dark:text-white dark:placeholder:text-gray-400 dark:focus:border-primary-500 dark:focus:ring-primary-500" placeholder="dd/mm/yyyy" />
                     </div>
 
                     <div>
@@ -129,6 +130,58 @@ function App() {
             </div>
           </form>
         </section>
+
+
+
+        <div class="relative overflow-x-auto">
+          <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+            <thead class="text-xs text-gray-900 uppercase dark:text-gray-400">
+              <tr>
+                <th scope="col" class="px-6 py-3">
+                  Tea Grades
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="bg-white dark:bg-gray-800">
+                <td class="px-6 py-4">
+                  BM
+                </td>
+                <td class="px-6 py-4">
+                  BOP
+                </td>
+                <td class="px-6 py-4">
+                  BOP1
+                </td>
+              </tr>
+              <tr class="bg-white dark:bg-gray-800">
+
+                <td class="px-6 py-4">
+                  GOLDEN TIP
+                </td>
+                <td class="px-6 py-4">
+                  BOPA
+                </td>
+                <td class="px-6 py-4">
+                  BOPF
+                </td>
+              </tr>
+              <tr class="bg-white dark:bg-gray-800">
+
+                <td class="px-6 py-4">
+                  BOPSP
+                </td>
+                <td class="px-6 py-4">
+                  BP
+                </td>
+                <td class="px-6 py-4">
+                  BT
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
 
       </div>
     </Layout>
